@@ -2,7 +2,23 @@
 
 **I use data science and ML to find the moments people want to watch.** My Python pipelines pull signals out of raw audio, video and chat with machine learning models, rank what's worth making, and measure how each upload performs.
 
+🎯 **Open to data science and computer science internships and jobs.**
+
 🌐 **Portfolio:** [hishamkhan1.github.io](https://hishamkhan1.github.io)
+
+## 💼 What I bring
+
+**Data science**
+- **Applied ML:** five models for speech, audio, faces, on-screen text and safety, running locally on CPU
+- **Feature engineering** on raw audio, video and chat signals, plus clustering and a ranking model tuned by my review decisions
+- **Experiments and KPIs:** a layout A/B test with views from the YouTube Data API, and analysis of a 3.1M-view channel
+- **SQL and data modeling:** an 8-table SQLite schema with an event log
+
+**Computer science & software engineering**
+- **17,000+ lines of Python** across three working desktop apps
+- **Testing and CI:** 170+ automated tests, and GitHub Actions on the YouTube pipeline
+- **APIs and auth:** YouTube Data API, Twitch Helix API and OAuth 2.0
+- **Concurrency and reliability:** background worker threads, resumable runs and retries that never double-bill
 
 ## 📈 Proven results
 
@@ -51,13 +67,16 @@ The proof is in the repos: thresholds measured on my own data (a duplicate-audio
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![C#](https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-## 🧠 Data science in my pipelines
+<details>
+<summary><b>🧠 Data science details</b></summary>
 
-- **ML signal extraction:** five models run locally on CPU: Whisper (speech), a CED audio tagger (laughter, screams, music), YuNet (faces), OCR (stream chat) and NudeNet (safety)
+- **ML signal extraction:** Whisper (speech), a CED audio tagger (laughter, screams, music), YuNet (faces), OCR (stream chat) and NudeNet (safety)
 - **Feature engineering:** loudness percentiles, spectral brightness, motion, face tracks and laughing-chat bursts aligned to the moment that caused them
 - **Clustering:** a 180-day clip index groups clips of the same stream seconds, so moments many viewers clipped rank highest
 - **Scoring that learns:** a weighted score ranks clips, and keep rates from my review queue adjust it
 - **A/B testing:** square and full-screen Shorts take turns, with views pulled per upload from the YouTube Data API
 - **Data engineering:** an 8-table SQLite database with an event log, backups, duplicate detection and API cost tracking
-- **Tested:** 170+ automated tests across my projects
+
+</details>
