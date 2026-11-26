@@ -31,6 +31,8 @@
 
 **Written by me, optimized with AI.** I'm not a vibe coder. I plan each pipeline, decide how it should work and write much of the code myself. I use AI assistants to optimize, refactor and catch bugs in code I already understand, the way I'd use a code reviewer.
 
+> 💡 **I believe in using AI to augment our workflows and break through human limitations.** My pipelines work that way: ML models do what no person could at scale, listening to every clip and reading the on-screen chat, while I bring the ideas, the design and the final call on what gets published.
+
 The proof is in the repos: thresholds measured on my own data (a duplicate-audio cutoff from 114 files, safety limits from real clips), 170+ automated tests, and version histories that show each tool growing release by release.
 
 ## 🛠️ Tech I use
