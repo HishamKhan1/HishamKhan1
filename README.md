@@ -1,8 +1,22 @@
 <h1>Hi, I'm Hisham 👋</h1>
 
-**I build Python tools that turn ideas and raw clips into finished videos.** My apps automate video production end to end: AI-written stories and narration, computer-vision framing, audio analysis and FFmpeg rendering. A human still approves everything before it goes live.
+**I build data-driven pipelines that turn raw clips into videos people watch.** My Python tools automate video production and measure what works: SQLite tracking, YouTube view analytics, A/B-tested formats, ranking models and cost analytics.
 
 🌐 **Portfolio:** [hishamkhan1.github.io](https://hishamkhan1.github.io)
+
+## 📈 Proven results
+
+**Funnycom**, the comedy channel I run, Jan 1 – Dec 31, 2025 (YouTube Studio):
+
+| Views | Watch time | Subscribers | Est. revenue |
+|:-:|:-:|:-:|:-:|
+| **3.1M** | **558.1K hrs** | **+4.9K** | **$6.6K** |
+
+≈10.8 min watched per view · ≈$2.13 per 1,000 views · ≈1.6 new subscribers per 1,000 views · best day ~87K views
+
+<a href="https://hishamkhan1.github.io/#results"><img src="https://raw.githubusercontent.com/HishamKhan1/HishamKhan1.github.io/master/assets/results/funnycom-2025-youtube-studio.png" width="640" alt="YouTube Studio Insights for Funnycom, 2025: 3.1M views, 558.1K watch hours, +4.9K subscribers, $6.6K estimated revenue"></a>
+
+<sub>The videos behind these numbers have since been set to private. FunnyComm automates the clip-to-Short workflow behind the channel.</sub>
 
 ## 🚀 Projects
 
@@ -29,9 +43,12 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![C#](https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 
-## ⚙️ How I build
+## 📊 How I use data
 
-- **Modular pipelines:** idea → script → voice → visuals → edit → review → publish
-- **Safe with money:** cost caps on paid APIs, and retries that never double-bill
-- **Resumable and tested:** 170+ automated tests across my projects
-- **Human in the loop:** nothing is published without review
+- **Measure loop:** collect → analyze → rank → edit → review → publish → measure ↺
+- **Crowd signals:** a 180-day clip index finds moments that many different viewers clipped
+- **A/B testing:** two Short layouts take turns, and views are pulled per upload from the YouTube Data API
+- **Learned ranking:** keep and skip rates from my review queue adjust each clip's score
+- **SQLite everywhere:** sources, productions, usage and an event log, with automatic backups
+- **Cost analytics:** per-model API pricing, pre-run estimates and hard spend caps
+- **Tested:** 170+ automated tests across my projects
