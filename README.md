@@ -1,6 +1,6 @@
 <h1>Hi, I'm Hisham 👋</h1>
 
-**I build data-driven pipelines that turn raw clips into videos people watch.** My Python tools automate video production and measure what works: SQLite tracking, YouTube view analytics, A/B-tested formats, ranking models and cost analytics.
+**I use data science and ML to find the moments people want to watch.** My Python pipelines pull signals out of raw audio, video and chat with machine learning models, rank what's worth making, and measure how each upload performs.
 
 🌐 **Portfolio:** [hishamkhan1.github.io](https://hishamkhan1.github.io)
 
@@ -22,7 +22,7 @@
 
 | | Project | What it does |
 |:-:|---|---|
-| <img src="https://raw.githubusercontent.com/HishamKhan1/funnycomm-twitch-pipeline/main/assets/funnycomm.png" width="48" alt=""> | **[FunnyComm Twitch Pipeline](https://github.com/HishamKhan1/funnycomm-twitch-pipeline)** | Finds the funniest Twitch moments with laughter detection, speech and chat reading, then edits face-aware vertical Shorts with a human review queue and scheduled YouTube upload. |
+| <img src="https://raw.githubusercontent.com/HishamKhan1/funnycomm-twitch-pipeline/main/assets/funnycomm.png" width="48" alt=""> | **[FunnyComm Twitch Pipeline](https://github.com/HishamKhan1/funnycomm-twitch-pipeline)** | Finds the funniest Twitch moments with five ML models (speech, laughter, faces, chat OCR, safety), crowd-signal clustering and a scoring model, then edits face-aware vertical Shorts with a human review queue and scheduled YouTube upload. |
 | <img src="https://raw.githubusercontent.com/HishamKhan1/anime-what-if-studio/main/assets/logo_128.png" width="48" alt=""> | **[Anime What If Studio](https://github.com/HishamKhan1/anime-what-if-studio)** | Produces long-form narrated "What if…?" anime episodes: story linter, AI artwork, ElevenLabs narration, 60 FPS motion, a locally synthesized score and hard cost caps. |
 | <img src="https://raw.githubusercontent.com/HishamKhan1/HishamKhan1.github.io/master/assets/youtube-automation-pipeline.svg" width="48" alt=""> | **[YouTube Automation Pipeline](https://github.com/HishamKhan1/youtube-automation-pipeline)** | Generates complete long-form horror story videos: AI story generation and revision, TTS, word-aligned subtitles, FFmpeg rendering and thumbnails. |
 | <img src="https://raw.githubusercontent.com/HishamKhan1/HishamKhan1.github.io/master/assets/streamer-shorts-studio.svg" width="48" alt=""> | **[Streamer Shorts Studio](https://github.com/HishamKhan1/streamer-shorts-studio)** | Turns landscape stream clips into 1080×1920 Shorts with automatic webcam detection, green-screen keying and a scene-aware moving crop. Runs fully offline. |
@@ -30,6 +30,7 @@
 ## 🛠️ Tech I use
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![FFmpeg](https://img.shields.io/badge/FFmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=for-the-badge&logo=google&logoColor=white)
@@ -43,12 +44,12 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![C#](https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 
-## 📊 How I use data
+## 🧠 Data science in my pipelines
 
-- **Measure loop:** collect → analyze → rank → edit → review → publish → measure ↺
-- **Crowd signals:** a 180-day clip index finds moments that many different viewers clipped
-- **A/B testing:** two Short layouts take turns, and views are pulled per upload from the YouTube Data API
-- **Learned ranking:** keep and skip rates from my review queue adjust each clip's score
-- **SQLite everywhere:** sources, productions, usage and an event log, with automatic backups
-- **Cost analytics:** per-model API pricing, pre-run estimates and hard spend caps
+- **ML signal extraction:** five models run locally on CPU: Whisper (speech), a CED audio tagger (laughter, screams, music), YuNet (faces), OCR (stream chat) and NudeNet (safety)
+- **Feature engineering:** loudness percentiles, spectral brightness, motion, face tracks and laughing-chat bursts aligned to the moment that caused them
+- **Clustering:** a 180-day clip index groups clips of the same stream seconds, so moments many viewers clipped rank highest
+- **Scoring that learns:** a weighted score ranks clips, and keep rates from my review queue adjust it
+- **A/B testing:** square and full-screen Shorts take turns, with views pulled per upload from the YouTube Data API
+- **Data engineering:** an 8-table SQLite database with an event log, backups, duplicate detection and API cost tracking
 - **Tested:** 170+ automated tests across my projects
