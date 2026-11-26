@@ -27,6 +27,12 @@
 | <img src="https://raw.githubusercontent.com/HishamKhan1/HishamKhan1.github.io/master/assets/youtube-automation-pipeline.svg" width="48" alt=""> | **[YouTube Automation Pipeline](https://github.com/HishamKhan1/youtube-automation-pipeline)** | Generates complete long-form horror story videos: AI story generation and revision, TTS, word-aligned subtitles, FFmpeg rendering and thumbnails. |
 | <img src="https://raw.githubusercontent.com/HishamKhan1/HishamKhan1.github.io/master/assets/streamer-shorts-studio.svg" width="48" alt=""> | **[Streamer Shorts Studio](https://github.com/HishamKhan1/streamer-shorts-studio)** | Turns landscape stream clips into 1080×1920 Shorts with automatic webcam detection, green-screen keying and a scene-aware moving crop. Runs fully offline. |
 
+## 🧑‍💻 How I build
+
+**Written by me, optimized with AI.** I'm not a vibe coder. I plan each pipeline, decide how it should work and write much of the code myself. I use AI assistants to optimize, refactor and catch bugs in code I already understand, the way I'd use a code reviewer.
+
+The proof is in the repos: thresholds measured on my own data (a duplicate-audio cutoff from 114 files, safety limits from real clips), 170+ automated tests, and version histories that show each tool growing release by release.
+
 ## 🛠️ Tech I use
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
